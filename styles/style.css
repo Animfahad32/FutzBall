@@ -7,20 +7,16 @@ body {
 
 /* Top Banner */
 .top-banner {
-    width: 100%;
-    display: flex;
+
+    display: grid;
     background-color: #2D25A0;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
 
 
 
 }
 
-.left-content {
-    width: 50%;
 
-}
 
 .left-content p {
     font-weight: 700;
@@ -36,9 +32,6 @@ body {
 
 .live-btn {
     margin-bottom: 169px;
-}
-
-.live-btn a {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #E02C6D;
@@ -47,23 +40,23 @@ body {
     font-size: 16px;
     margin-left: 180px;
     transition: all 0.3s ease 0s;
-
 }
 
-.live-btn:hover a {
+
+
+.live-btn:hover {
     font-weight: 700 !important;
     letter-spacing: 5px;
     box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.3s ease 0s;
 }
 
-.right-content {
-    width: 50%;
-}
+
 
 .right-content img {
     width: 556px;
     height: 438px;
+    margin-top: 50px;
 }
 
 /* Players Card */
@@ -97,9 +90,11 @@ body {
 
 .achievements {
     margin-top: 165px;
-    display: flex;
-    justify-content: center;
-    background-image: url(https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/05/bg1.jpg?id=811);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 
 }
 
@@ -108,11 +103,11 @@ body {
 }
 
 .achievement h3 {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     color: #fbc02d;
     font-size: 60px;
-    margin-block-end: unset;
+
 
 }
 
@@ -128,9 +123,11 @@ body {
 /* Award Section */
 
 .award-section {
-    background-image: url(https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/05/award_bg.jpg?id=1627);
-    background-repeat: no-repeat;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     margin-top: 100px;
+
+
 }
 
 .award-section>h3 {
@@ -142,14 +139,14 @@ body {
 }
 
 .awards {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .award {
     width: 300px;
     margin-left: 45px;
-    background-image: linear-gradient(360deg, #010024 0%, #09097900 35%, #00d4ff05 10%);
+    background-image: linear-gradient(360deg, #3633a799 0%, #09097900 35%, #00d4ff05 10%);
 }
 
 
@@ -180,11 +177,7 @@ body {
     margin-top: 200px;
 }
 
-.footer-area img {
-    width: 483.87px;
-    height: 110px;
 
-}
 
 .social-media {
     text-align: center;
@@ -210,58 +203,68 @@ body {
 @media only screen and (max-width: 767px) {
 
     .top-banner {
-        width: 100%;
-        display: flex;
+
+        display: grid;
         background-color: #2D25A0;
-        align-items: center;
-        flex-direction: column;
-
-
-    }
-
-
-    .left-content {
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
+
+
+
     }
 
+    .left-content p {
+
+        margin-left: 10px;
+    }
 
     .live-btn {
-        margin-bottom: 75px;
-    }
-
-    .live-btn a {
-        text-decoration: none;
-        color: #FFFFFF;
-        background-color: #E02C6D;
-        padding: 12px;
-        font-weight: 500;
-        font-size: 16px;
-
-        margin-left: 100px;
-
-    }
-
-    .right-content {
-        width: 100%;
+        margin-left: 10px;
     }
 
     .right-content img {
-        width: 90%;
-        margin-left: 50px;
+        width: 100%;
+
+        margin-top: 100px;
     }
+
 
     .players {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .achievements {}
-
-    .award-section {
-        display: none;
+    .player {
+        margin-left: 0;
     }
 
-    .footer {
-        display: none;
+    .achievements {
+        margin-top: 165px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+
+    }
+
+    .achievement {
+        padding-right: 0px;
+    }
+
+    .award-section>h3 {
+        font-size: 30px;
+    }
+
+    .awards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .award {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .footer-area img {
+        width: 85%;
     }
 
 }
