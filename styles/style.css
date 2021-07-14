@@ -1,0 +1,267 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Top Banner */
+.top-banner {
+    width: 100%;
+    display: flex;
+    background-color: #2D25A0;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.left-content {
+    width: 50%;
+
+}
+
+.left-content p {
+    font-weight: 700;
+    line-height: 80px;
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-left: 127px;
+    width: 50%;
+    margin-bottom: 46px;
+
+
+}
+
+.live-btn {
+    margin-bottom: 169px;
+}
+
+.live-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 180px;
+    transition: all 0.3s ease 0s;
+
+}
+
+.live-btn:hover a {
+    font-weight: 700 !important;
+    letter-spacing: 5px;
+    box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.right-content {
+    width: 50%;
+}
+
+.right-content img {
+    width: 556px;
+    height: 438px;
+}
+
+/* Players Card */
+.player-cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
+    justify-items: center;
+}
+
+.player {
+    width: 330px;
+    padding: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-left: 30px;
+
+
+}
+
+.player-thumbnail img {
+    width: 100%;
+}
+
+/* Achievements Section */
+
+.achievements {
+    margin-top: 165px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/05/bg1.jpg?id=811);
+
+}
+
+.achievement {
+    padding-right: 60px;
+}
+
+.achievement h3 {
+    display: flex;
+    justify-content: center;
+    color: #fbc02d;
+    font-size: 60px;
+    margin-block-end: unset;
+
+}
+
+.achievement p {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-block-start: unset;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+/* Award Section */
+
+.award-section {
+    background-image: url(https://rstheme.com/products/wordpress/khelo/wp-content/uploads/2019/05/award_bg.jpg?id=1627);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.award-section>h3 {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+.awards {
+    display: flex;
+    justify-content: center;
+}
+
+.award {
+    width: 300px;
+    margin-left: 45px;
+    background-image: linear-gradient(360deg, #010024 0%, #09097900 35%, #00d4ff05 10%);
+}
+
+
+.award h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #FFFFFF;
+
+}
+
+.award img {
+    width: 100%;
+}
+
+.award p {
+    display: flex;
+    justify-content: center;
+    color: #fbc02d;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Footer Area */
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.footer-area img {
+    width: 483.87px;
+    height: 110px;
+
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media .icon {
+    color: #969BAB;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-area p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 767px) {
+
+    .top-banner {
+        width: 100%;
+        display: flex;
+        background-color: #2D25A0;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+
+    .left-content {
+        width: 100%;
+    }
+
+
+    .live-btn {
+        margin-bottom: 75px;
+    }
+
+    .live-btn a {
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #E02C6D;
+        padding: 12px;
+        font-weight: 500;
+        font-size: 16px;
+
+        margin-left: 100px;
+
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    .right-content img {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .achievements {}
+
+    .award-section {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
